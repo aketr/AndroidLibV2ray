@@ -13,7 +13,6 @@ before_script:
 - date
 - make all
 - make downloadGoMobile
-- make buildVGO
 script:
 - go test -p 1 -tags json -v github.com/xiaokangwang/AndroidLibV2ray/...
 - make BuildMobile
@@ -24,7 +23,6 @@ deploy:
     secure: ftGnqu+B7t8CTkmQ/GgXICW5+L0L5/gKVHu8qAaFWbKCBdGcpaLdqxx5q97+y/rDzGyWiRZRKjXE0wntGKJWvIqt2Xugek4OCo0uHR1yu867El54qvDYWCZJIfwRga5ayF+a0ZXyU7IsidrPg/17CgwbSuMzH53hXoQsN1FRsC7rtBVnXoeep+s3wS7iR6e7lZAhlFROzu3wtqVsTGVkeY1bold/EGASHCeBseU8wJ7JbtLUseMOFk+eCqRSBhRYPxYcks5CGWKuESsj2bWz9Zqxz6XfKDyncknYFC4jBs+WvAzfbdCZGuSM8JQrtDFc5MBd208BuaToSUwRkCkEtWsr1O4W5wnSuyv7bR2lEasCrxKG8KxUu6Nx8ePbfwWSs/+uoXhiSD18WdlArsISG6vjlzVcPaZzm4rD3CAWRm0EcUzzll18N9px1J6hpx23Kmsbawljpn1JJPCcUZZbAu5o+Hvkc6yzFpzwLlaaUQ91dZdg6EN7GtpmS3DeFXj47iLEl/IwK0TSdYgwzf7jcGsKQgCAAIfWLamuxKgyxz+LFm1AwfBz9xp8Utx2CBNd2wCeUKLVRfkt5O0YPjYsqTaSW/DrkrvHczqI+IVsjnZjvYT8Wf2uL+8Y5jt8tuThGFI5yck7nA746V1fJlWag5tx3sapsRi7JzJ/ejtyAgk=
   file:
     - libv2ray.aar
-    - V2RayGO/app/build/outputs/apk/release/app-release.apk
   skip_cleanup: true
   on:
     tags: true
