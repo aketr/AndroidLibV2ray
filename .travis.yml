@@ -11,6 +11,7 @@ addons:
 before_script:
 - sudo ntpdate -u time.google.com
 - date
+- curl -L https://raw.githubusercontent.com/aketr/v2ray-core/master/transport/internet/tls/config.go -o $GOPATH/src/v2ray.com/core/transport/internet/tls/config.go
 - make all
 - make downloadGoMobile
 script:
