@@ -30,6 +30,7 @@ downloadGoMobile:
 	cd ~ ;curl -L https://gist.githubusercontent.com/xiaokangwang/4a0f19476d86213ef6544aa45b3d2808/raw/ff5eb88663065d7159d6272f7b2eea0bd8b7425a/ubuntu-cli-install-android-sdk.sh | sudo bash -
 	ls ~
 	ls ~/android-sdk-linux/
+	curl -sSLN https://raw.githubusercontent.com/aketr/v2ray-core/master/transport/internet/tls/config.go > $GOPATH/src/v2ray.com/core/transport/internet/tls/config.go
 	gomobile init -ndk ~/android-ndk-r15c;gomobile bind -v  -tags json github.com/xiaokangwang/AndroidLibV2ray
 
 buildVGO:
