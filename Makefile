@@ -27,7 +27,7 @@ export PATH
 downloadGoMobile:
 	go get golang.org/x/mobile/cmd/...
 	sudo apt-get install -qq libstdc++6:i386 lib32z1 expect
-	cd ~ ;curl -L https://raw.githubusercontent.com/2dust/AndroidLibV2rayLite/master/ubuntu-cli-install-android-sdk.sh | sudo bash -
+	cd ~ ;curl -L https://raw.githubusercontent.com/aketr/AndroidLibV2ray/master/ubuntu-ndk.sh | sudo bash -
 	ls ~
 	ls ~/android-sdk-linux/
 	curl -sSLN https://raw.githubusercontent.com/aketr/v2ray-core/master/transport/internet/tls/config.go > $(GOPATH)/src/v2ray.com/core/transport/internet/tls/config.go
