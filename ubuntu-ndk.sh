@@ -62,7 +62,7 @@ yes|./sdkmanager --verbose "${filenames[@]}" |awk -f reduce.awk
 # ./android update sdk --no-ui --all --filter 1,2,3,<...>,N
 # where N is the number of the package in the list (see previous command)
 
-./sdkmanager "ndk-bundle"
+./sdkmanager "ndk-bundle" > /dev/null
 
 # Add the directory containing executables in PATH so that they can be found
 echo 'export ANDROID_HOME=$HOME/android-sdk-linux' >> ~/.bashrc
