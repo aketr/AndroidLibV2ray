@@ -4,12 +4,12 @@
 # Execute this script in your home directory. Lines 17 and 21 will prompt you for a y/n
 
 # Install Oracle JDK 8
-apt-get update
-apt-get install -y openjdk-8-jdk
-apt-get install -y unzip make expect # NDK stuff
+apt-get update -qq
+apt-get install -y openjdk-8-jdk -qq
+apt-get install -y unzip make expect -qq# NDK stuff
 
 # Get SDK tools (link from https://developer.android.com/studio/index.html#downloads)
-wget -q https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip
+wget -q https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip --quiet
 mkdir android-sdk-linux
 unzip sdk*.zip -d android-sdk-linux -qq
 
