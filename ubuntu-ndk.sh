@@ -11,7 +11,7 @@ apt-get install -y unzip make expect -qq# NDK stuff
 # Get SDK tools (link from https://developer.android.com/studio/index.html#downloads)
 wget -q https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip --quiet
 mkdir android-sdk-linux
-unzip sdk*.zip -d android-sdk-linux -qq
+unzip -qq sdk*.zip -d android-sdk-linux
 
 # Get NDK (https://developer.android.com/ndk/downloads/index.html)
 # wget -q https://dl.google.com/android/repository/android-ndk-r15c-linux-x86_64.zip
